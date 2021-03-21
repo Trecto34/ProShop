@@ -32,7 +32,8 @@
 <h2 align='center'> :pencil2: Todo's</h2>
 
 - [x] Start the frontend
-- [ ] Start the backend
+- [x] Start the backend
+- [ ] Connect the backend and the frontend
 - [ ] Shopping Cart
 - [ ] Login
 - [ ] Admin Screen
@@ -48,6 +49,7 @@ Clone this repository, then go to the frontend folder and run:
 ```bash
 yarn
 ```
+
 Then run the development server:
 
 ```bash
