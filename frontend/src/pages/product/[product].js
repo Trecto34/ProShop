@@ -1,7 +1,8 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
+import axios from "axios";
 import {
   Container,
   Row,
@@ -15,12 +16,22 @@ import {
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Rating from "../../components/Rating";
-import products from "../../utils/products";
 
 const ProductPage = () => {
   const router = useRouter();
-  let { product } = router.query;
-  product = products.find((p) => p._id == parseInt(product));
+  let productId = router.query.product;
+  const [product, setProduct] = useState([]);
+
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(
+        `http://127.0.0.1:8000/api/products/${parseInt(productId)}`
+      );
+      setProduct(data);
+    };
+    fetchProduct();
+  }, []);
+
   return (
     <div>
       <Head>

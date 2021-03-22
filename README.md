@@ -33,8 +33,8 @@
 
 - [x] Start the frontend
 - [x] Start the backend
-- [ ] Connect the backend and the frontend
-- [ ] Shopping Cart
+- [x] Connect backend to frontend
+- [ ] Create a real DB
 - [ ] Login
 - [ ] Admin Screen
 - [ ] Product Reviews
