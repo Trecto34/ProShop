@@ -8,7 +8,7 @@ const Product = ({ product }) => {
     <Card className="my-3 p-3 rounded">
       <Link href="/product/[product]" as={`/product/${product._id}`}>
         <a>
-          <Card.Img src={product.image} />
+          <Card.Img src={`${process.env.BACKEND_URL + product.image}`} />
         </a>
       </Link>
 

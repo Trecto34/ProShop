@@ -25,7 +25,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       const { data } = await axios.get(
-        `http://127.0.0.1:8000/api/products/${parseInt(productId)}`
+        `${process.env.BACKEND_URL}/api/products/${parseInt(productId)}`
       );
       setProduct(data);
     };
@@ -47,7 +47,7 @@ const ProductPage = () => {
             </Link>
             <Row>
               <Col md={6}>
-                <Image src={product.image} alt={product.name} fluid />
+                <Image src={`${process.env.BACKEND_URL + product.image}`} alt={product.name} fluid />
               </Col>
 
               <Col md={3}>

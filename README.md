@@ -34,8 +34,8 @@
 - [x] Start the frontend
 - [x] Start the backend
 - [x] Connect backend to frontend
-- [ ] Create a real DB
-- [ ] Login
+- [x] Create a real DB
+- [ ] Login Auth
 - [ ] Admin Screen
 - [ ] Product Reviews
 - [ ] Search

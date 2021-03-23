@@ -2,6 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/dotenv,python,vscode,yarn,django,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=dotenv,python,vscode,yarn,django,react
 
+
 ### Django ###
 *.log
 *.pot
@@ -255,7 +256,6 @@ sketch
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
-
 # if you are NOT using Zero-installs, then:
 # comment the following lines
 !.yarn/cache
